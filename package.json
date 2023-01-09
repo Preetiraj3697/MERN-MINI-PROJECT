@@ -1,0 +1,23 @@
+{
+  "name": "mern-mini-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Preetiraj3697/MERN-MINI-PROJECT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Preetiraj3697/MERN-MINI-PROJECT/issues"
+  },
+  "homepage": "https://github.com/Preetiraj3697/MERN-MINI-PROJECT#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
