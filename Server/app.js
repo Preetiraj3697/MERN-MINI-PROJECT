@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require("express");
 require("./db/conn");
-
+// const User = require("./model/userSchema");
 //middleware
 const middleware = (req,res,next) => {
    console.log("hello my middleware");
