@@ -6,7 +6,3 @@ mongoose.connect(DB).then(()=>{
     console.log(err);
     console.log("no connection");
 })
-
-// module.exports = {
-
-// }

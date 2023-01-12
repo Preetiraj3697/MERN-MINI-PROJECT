@@ -1,6 +1,11 @@
 require('dotenv').config();
 const express = require("express");
+const app = express();
 require("./db/conn");
+app.use(express.json());
+const {router} = require('./router/auth')
+//we link the router files to make our route easy
+app.use(router);
 // const User = require("./model/userSchema");
 //middleware
 const middleware = (req,res,next) => {
@@ -8,19 +13,8 @@ const middleware = (req,res,next) => {
    next();
 }
 
-const app = express();
-const port = 3000;
-app.get("/",(req,res)=>{
-    res.send("HOME PAGE");
-})
-app.get("/about",middleware,(req,res)=>{
-    console.log("hello my About");
-    res.send("ABOUT PAGE");
-})
-app.get("/contact",(req,res)=>{
-    res.send("CONTACT PAGE");
-})
 
+const port = 3000;
 app.listen(port,()=>{
     console.log(`Server are listening at ${port}`);
 })
